@@ -51,3 +51,15 @@ def get_average(*args):
 
 
 print(get_average(1, 2, 3, 4))
+
+# Типизация
+def calc_total(price: int, quantity: int, has_discount: bool) -> int:
+    total = price * quantity
+
+    if has_discount:
+        total -= 10
+
+    return total
+
+
+print(calc_total(price=15, quantity=2, has_discount=True))
