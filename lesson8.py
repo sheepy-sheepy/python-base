@@ -43,3 +43,11 @@ show_city()  # London, т.к. помимо глобальной переменн
                 # в функции есть локальная переменная city
 print(city)  # Moscow, т.к. интерпретатор не видит локальную переменную в
                 # функции - она существует только в функции
+
+# 5
+def get_average(*args):
+    average = sum(args) / len(args)
+    return average
+
+
+print(get_average(1, 2, 3, 4))
