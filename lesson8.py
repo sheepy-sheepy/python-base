@@ -29,3 +29,17 @@ def check_age(age):
 print(check_age(15))
 print(check_age(61))
 print(check_age(9))
+
+# 4
+city = "Moscow"
+
+
+def show_city():
+    city = "London"
+    print(city)
+
+
+show_city()  # London, т.к. помимо глобальной переменной за функцией
+                # в функции есть локальная переменная city
+print(city)  # Moscow, т.к. интерпретатор не видит локальную переменную в
+                # функции - она существует только в функции
